@@ -31,7 +31,7 @@ function Footer({}: Props) {
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                className="w-8 h-8 text-white"
+                className="w-8 h-8 "
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8" />
