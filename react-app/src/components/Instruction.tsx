@@ -41,7 +41,7 @@ function Instruction({}: Props) {
     <section className="w-full min-w-50 flex flex-col p-6 gap-4 md:gap-0 bg-[#c28eaf] ">
       {instruction.map((item) => (
         <Reveal key={item.id}>
-          <article className="grid grid-cols-1 min-h-[calc(100vh-3rem)] md:grid-cols-2 justify-items-center items-center grow gap-4">
+          <article className="grid grid-cols-1 md:min-h-[calc(100vh-3rem)] md:grid-cols-2 justify-items-center items-center grow gap-4">
             <img
               className={`w-full md:w-[80%] h-auto aspect-square object-cover rounded-full order-last ${
                 item.id % 2 === 0 ? "md:order-first" : "md:order-last"
