@@ -50,8 +50,20 @@ function Navbar2({}: Props) {
             target="_blank"
             title="Ir a Instagram de Deralyte"
           >
-            <svg className="w-8 h-8 text-white">
-              <use href="/sprite.svg#icon-instagram" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="w-8 h-8 text-white"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4l0 -8" />
+              <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+              <path d="M16.5 7.5v.01" />
             </svg>
           </a>
 
@@ -61,8 +73,14 @@ function Navbar2({}: Props) {
             target="_blank"
             title="Ir a Facebook de Deralyte"
           >
-            <svg className=" bottom-0 w-6 h-6 text-white ">
-              <use href="/sprite.svg#icon-facebook" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className=" w-6 h-6 text-white"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z" />
             </svg>
           </a>
         </div>
@@ -74,8 +92,21 @@ function Navbar2({}: Props) {
             onClick={() => setIsOpen(!isOpen)}
             className="  text-white relative p-6 z-6    "
           >
-            <svg className="w-6 h-6" aria-hidden="true">
-              <use href="/sprite.svg#icon-menu-2" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="w-6 h-6"
+              aria-hidden="true"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 6l16 0" />
+              <path d="M4 12l16 0" />
+              <path d="M4 18l16 0" />
             </svg>
           </button>
         </div>
