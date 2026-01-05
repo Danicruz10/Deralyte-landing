@@ -23,7 +23,7 @@ function Footer({}: Props) {
               aria-label="Instagram de Deralyte"
             >
               <svg className="w-8 h-8" aria-hidden="true">
-                <use href="../../../public/sprite.svg#icon-instagram" />
+                <use href="/sprite.svg#icon-instagram" />
               </svg>
             </a>
           </div>

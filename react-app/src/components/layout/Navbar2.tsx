@@ -51,7 +51,7 @@ function Navbar2({}: Props) {
             title="Ir a Instagram de Deralyte"
           >
             <svg className="w-8 h-8 text-white">
-              <use href="../../../public/sprite.svg#icon-instagram" />
+              <use href="/sprite.svg#icon-instagram" />
             </svg>
           </a>
 
@@ -62,7 +62,7 @@ function Navbar2({}: Props) {
             title="Ir a Facebook de Deralyte"
           >
             <svg className=" bottom-0 w-6 h-6 text-white ">
-              <use href="../../../public/sprite.svg#icon-facebook" />
+              <use href="/sprite.svg#icon-facebook" />
             </svg>
           </a>
         </div>
@@ -75,7 +75,7 @@ function Navbar2({}: Props) {
             className="  text-white relative p-6 z-6    "
           >
             <svg className="w-6 h-6" aria-hidden="true">
-              <use href="../../../public/sprite.svg#icon-menu-2" />
+              <use href="/sprite.svg#icon-menu-2" />
             </svg>
           </button>
         </div>
