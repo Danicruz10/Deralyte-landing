@@ -13,7 +13,7 @@ function Reviews({}: Props) {
 
   // Usamos todas las reseñas del JSON (o las que quieras, ej: 10)
 
-  const reviews = reviewsData;
+  const reviews = reviewsData.slice(0, 5);
 
   const [visibleCount, setVisibleCount] = useState(3); // Cuántas queremos ver
 
@@ -84,7 +84,12 @@ function Reviews({}: Props) {
                 style={{ width: `${100 / visibleCount}%` }} // Ancho dinámico
                 className="flex-none h-full p-2"
               >
-                <div className="w-full h-full flex flex-col gap-4 items-center justify-center p-8 rounded-xl text-center bg-white/20">
+                <a
+                  href="https://www.amazon.com/dp/B0FQCS5226/#customerReviews"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full h-full flex flex-col gap-4 items-center justify-center p-8 rounded-xl text-center bg-white/20 hover:bg-white/30 transition-colors"
+                >
                   <div className="flex text-yellow-400">
                     {[...Array(review.rating)].map((_, i) => (
                       <span key={i}>★</span>
@@ -102,10 +107,20 @@ function Reviews({}: Props) {
                   <span className="font-semibold text-pink-300">
                     - {review.profileName || "Cliente Satisfecha"}
                   </span>
-                </div>
+                </a>
               </div>
             ))}
           </div>
+        </div>
+        <div className="max-w-3xs mx-auto flex justify-center md:hidden overflow-hidden">
+          {[...Array(reviews.length)].map((_, index: number) => (
+            <div
+              key={index}
+              className={`h-1.5 w-1.5 rounded-full mx-1 ${
+                index === currentIndex ? "bg-blue-700" : " bg-white/20"
+              }`}
+            ></div>
+          ))}
         </div>
 
         {/* Botones de control */}

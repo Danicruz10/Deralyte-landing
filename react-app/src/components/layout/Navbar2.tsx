@@ -1,7 +1,9 @@
 //import React from "react";
 //import { Link } from "react-router-dom";
 import { useState } from "react";
-import Hero from "../../assets/media/5035176395637721968.jpg";
+//import Hero from "../../assets/media/5035176395637721968.jpg";
+import trace2 from "../../assets/media/trace2.png";
+import trace1 from "../../assets/media/trace1.png";
 import { motion, AnimatePresence } from "framer-motion";
 
 type Props = {};
@@ -17,14 +19,9 @@ function Navbar2({}: Props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header
-      style={{
-        backgroundImage: `url(${Hero})`,
-      }}
-      className="bg-center bg-cover h-[80vh] min-w-50 relative "
-    >
+    <header className="bg-[#c28eaf] h-[80vh] min-w-50 relative ">
       <nav
-        className="hidden sm:flex justify-between items-center px-13 h-36 relative"
+        className="hidden sm:flex justify-between items-center px-13 h-36 relative z-10"
         aria-label="Global"
       >
         <div>
@@ -134,6 +131,25 @@ function Navbar2({}: Props) {
           )}
         </AnimatePresence>
       </nav>
+
+      <div className="absolute inset-0 m-auto flex flex-col gap-2 items-center justify-center ">
+        <div className="relative flex items-center justify-center w-full">
+          <img
+            className=" max-md:hidden aspect-square w-30 h-30 mr-2 shrink-0"
+            src={trace2}
+            alt="trace 2"
+          />
+          <img
+            className="aspect-auto w-full max-w-xl h-auto "
+            src={trace1}
+            alt="trace 1"
+          />
+        </div>
+        <div className="  text-center">
+          <h3>Collagen</h3>
+          <h3>Real Deep Mask</h3>
+        </div>
+      </div>
 
       <div className="w-full absolute flex justify-center bottom-9">
         <a

@@ -13,12 +13,13 @@ function IntroductionSection({}: Props) {
             Introducing the Deralyte Mask
           </h1>
           <p className="text-center mt-15 text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            vel tortor odio. Donec eget euismod justo, at interdum elit. Mauris
-            eu dui non risus feugiat luctus. Nunc vel enim a elit tincidunt
-            semper. Sed quis quam eget ipsum laoreet tempor. Vivamus eu magna a
-            nunc pharetra interdum. Quisque quis feugiat neque. Praesent in
-            risus vitae nisl auctor feugiat.
+            Revitalize your skincare routine with the Deralyte Bio-Collagen Deep
+            Hydrating Face Mask, specially formulated to deliver intense
+            overnight hydration and support a healthier, more radiant
+            complexion. Infused with powerful bio-collagen and hydrogel
+            technology, this mask helps soothe tired skin, refine the appearance
+            of pores, and boost moisture while you sleep for smoother, plumper,
+            more glowing skin come morning.
           </p>
         </Reveal>
       </article>
