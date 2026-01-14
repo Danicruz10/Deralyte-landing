@@ -84,7 +84,7 @@ function Navbar2({}: Props) {
       </nav>
 
       <nav className="sm:hidden fixed top-0 w-full z-50 flex flex-col bg-black">
-        <div className="flex justify-start">
+        <div className="flex justify-between items-center">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="  text-white relative p-6 z-6    "
@@ -106,6 +106,12 @@ function Navbar2({}: Props) {
               <path d="M4 18l16 0" />
             </svg>
           </button>
+
+          <img
+            className="relative mr-6 w-10 h-10 z-6 text-white"
+            src={trace2}
+            alt="Logo"
+          />
         </div>
 
         <AnimatePresence>
@@ -135,12 +141,12 @@ function Navbar2({}: Props) {
       <div className="absolute inset-0 m-auto flex flex-col gap-2 items-center justify-center ">
         <div className="relative flex items-center justify-center w-full">
           <img
-            className=" max-md:hidden aspect-square w-30 h-30 mr-2 shrink-0"
+            className=" max-md:hidden aspect-square w-37.5 h-37.5 mr-2 shrink-0"
             src={trace2}
             alt="trace 2"
           />
           <img
-            className="aspect-auto w-full max-w-xl h-auto "
+            className="aspect-auto w-full max-w-xl h-auto px-4 md:px-0"
             src={trace1}
             alt="trace 1"
           />
