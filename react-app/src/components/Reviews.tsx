@@ -85,7 +85,7 @@ function Reviews({}: Props) {
                 className="flex-none h-full p-2"
               >
                 <a
-                  href="https://www.amazon.com/dp/B0FQCS5226/#customerReviews"
+                  href="https://www.amazon.com/product-reviews/B0FQCS5226"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full h-full flex flex-col gap-4 items-center justify-center p-8 rounded-xl text-center bg-white/20 hover:bg-white/30 transition-colors"
