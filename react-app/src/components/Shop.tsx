@@ -8,7 +8,7 @@ function Shop({}: Props) {
   return (
     <section
       id="shop"
-      className="w-full min-h-screen  min-w-50  p-6  bg-[#c28eaf] scroll-mt-18 sm:scroll-mt-0"
+      className="w-full min-h-screen flex items-center min-w-50  p-6  bg-[#c28eaf] scroll-mt-18 sm:scroll-mt-0"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 h-full gap-4">
         <section className=" flex flex-col max-[10rem]:wrap-anywhere wrap-break-word p-4 min-h-fit ">
