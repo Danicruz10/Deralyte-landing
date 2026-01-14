@@ -41,7 +41,7 @@ function Brand({}: Props) {
   return (
     <section
       id="brand"
-      className="w-full min-h-screen min-w-50 md:py-20 p-6 scroll-mt-18 sm:scroll-mt-0 bg-black/70 flex  "
+      className="w-full min-h-screen min-w-50 md:py-20 p-6 scroll-mt-18 sm:scroll-mt-0 bg-black/70 flex items-center "
     >
       <div className=" grid grid-cols-1 md:grid-cols-4 grow gap-4">
         {brand.map((item, index) => (
