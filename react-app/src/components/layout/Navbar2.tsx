@@ -155,18 +155,17 @@ function Navbar2({}: Props) {
           <h3>Collagen</h3>
           <h3>Real Deep Mask</h3>
         </div>
-      </div>
-
-      <div className="w-full absolute flex justify-center bottom-9">
-        <a
-          href="https://www.amazon.com/dp/B0FQCS5226"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Product in Amazon"
-          className="  bg-black text-white relative px-6 py-4 rounded-lg text-lg font-semibold   hover:bg-black/80 transition-colors shadow-[0px_2px_2px_rgba(0,0,0,0.5)] "
-        >
-          Shop Now
-        </a>
+        <div className="w-full flex justify-center pt-2">
+          <a
+            href="https://www.amazon.com/dp/B0FQCS5226"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Product in Amazon"
+            className="  bg-black text-white relative px-6 py-4 rounded-lg text-lg font-semibold   hover:bg-black/80 transition-colors shadow-[0px_2px_2px_rgba(0,0,0,0.5)] "
+          >
+            Shop Now
+          </a>
+        </div>
       </div>
     </header>
   );
