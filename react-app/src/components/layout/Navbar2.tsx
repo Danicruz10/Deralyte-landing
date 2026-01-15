@@ -138,7 +138,7 @@ function Navbar2({}: Props) {
         </AnimatePresence>
       </nav>
 
-      <div className="absolute inset-0 m-auto flex flex-col gap-2 items-center justify-center lg:mt-18 lg:py-2 mt-0 py-0">
+      <div className="absolute inset-0 m-auto flex flex-col gap-2 items-center justify-center mt-18 py-2 lg:mt-0 lg:py-0">
         <div className="relative flex items-center justify-center w-full">
           <img
             className=" max-lg:hidden aspect-square w-37.5 h-37.5 mr-2 shrink-0"
