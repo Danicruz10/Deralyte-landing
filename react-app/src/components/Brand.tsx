@@ -41,7 +41,7 @@ function Brand({}: Props) {
   return (
     <section
       id="brand"
-      className="w-full min-h-screen min-w-50 md:py-20 p-6 scroll-mt-18 sm:scroll-mt-0 bg-black/70 flex items-center "
+      className="w-full min-h-screen min-w-50 md:py-20 p-6 scroll-mt-18 sm:scroll-mt-0 bg-white flex items-center "
     >
       <div className=" grid grid-cols-1 md:grid-cols-4 grow gap-4">
         {brand.map((item) => (
@@ -57,7 +57,7 @@ function Brand({}: Props) {
               />
             </Reveal>
             <Reveal>
-              <div className="flex flex-col  items-center gap-4 text-white flex-1">
+              <div className="flex flex-col  items-center gap-4 text-black/60 flex-1">
                 <h3 className="font-poppins text-center font-semibold text-xl min-h-fit ">
                   {item.title}
                 </h3>

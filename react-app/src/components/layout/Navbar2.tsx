@@ -4,6 +4,7 @@
 //import Hero from "../../assets/media/5035176395637721968.jpg";
 import trace2 from "../../assets/media/trace2.png";
 import trace1 from "../../assets/media/trace1.png";
+import hero from "../../assets/media/Hero.webp";
 import { motion, AnimatePresence } from "framer-motion";
 
 type Props = {
@@ -19,14 +20,23 @@ const navigation = [
 ];
 
 function Navbar2({ onClick, state }: Props) {
+  const headerStyle = {
+    "--fondo-hero": `url(${hero})`,
+  } as React.CSSProperties;
   return (
-    <header className="bg-[#c28eaf] min-h-[80vh] min-w-50 relative flex flex-col">
+    <header
+      style={headerStyle}
+      className="min-h-[80vh] min-w-50 relative flex flex-col bg-linear-to-b from-white to-pink-200 md:bg-(image:--fondo-hero) bg-cover bg-center bg-no-repeat"
+    >
       <nav
         className="hidden md:flex justify-between items-center px-13 h-36 relative z-10"
         aria-label="Global"
       >
         <div>
-          <a className="text-3xl text-white" href="#">
+          <a
+            className="inline-block text-3xl text-black/60 hover:text-black/80 hover:scale-105 transition-transform duration-300"
+            href="#"
+          >
             Deralyte
           </a>
         </div>
@@ -35,7 +45,7 @@ function Navbar2({ onClick, state }: Props) {
             <a
               key={item.name}
               href={item.href}
-              className="font-semibold text-white hover:text-black/80 hover:scale-105 transition-transform duration-300"
+              className="font-semibold text-black/60 hover:text-black/80 hover:scale-105 transition-transform duration-300"
             >
               {item.name}
             </a>
@@ -84,7 +94,19 @@ function Navbar2({ onClick, state }: Props) {
         </div>
       </nav>
 
-      <div className="  flex-1 flex flex-col gap-2 items-center justify-center mt-18 py-6 md:mt-0 md:pt-0">
+      <div className="max-md:hidden w-full flex justify-center mt-auto pt-12 pb-6">
+        <a
+          href="https://www.amazon.com/dp/B0FQCS5226"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Product in Amazon"
+          className="  bg-black text-white relative px-6 py-4 rounded-lg text-lg font-semibold   hover:bg-black/80 transition-colors shadow-[0px_2px_2px_rgba(0,0,0,0.5)] "
+        >
+          Shop Now
+        </a>
+      </div>
+
+      <div className=" md:hidden  flex-1 flex flex-col gap-2 items-center justify-center mt-18 py-6 ">
         <div className="relative flex items-center justify-center w-full">
           <img
             className=" max-lg:hidden aspect-square w-37.5 h-37.5 mr-2 shrink-0"
@@ -92,7 +114,7 @@ function Navbar2({ onClick, state }: Props) {
             alt="trace 2"
           />
           <img
-            className="aspect-auto w-full max-w-xl h-auto px-4 lg:px-0"
+            className="aspect-auto w-full max-w-xl h-auto px-4 "
             src={trace1}
             alt="trace 1"
           />
@@ -101,7 +123,7 @@ function Navbar2({ onClick, state }: Props) {
           <h3>Collagen</h3>
           <h3>Real Deep Mask</h3>
         </div>
-        <div className="w-full flex justify-center pt-0 lg:pt-2">
+        <div className="w-full flex justify-center ">
           <a
             href="https://www.amazon.com/dp/B0FQCS5226"
             target="_blank"

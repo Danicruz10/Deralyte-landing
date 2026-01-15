@@ -3,6 +3,7 @@
 @theme {
   --font-sans: "Inter", "sans-serif";
   --font-poppins: "Poppins", "sans-serif";
+  --color-brand-pink: #fce4ec; /* Un rosa muy suave */
 }
 
 html {

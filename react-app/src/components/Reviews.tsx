@@ -58,7 +58,7 @@ function Reviews({}: Props) {
   return (
     <div
       id="reviews"
-      className="relative w-full min-w-50 py-10 px-4 scroll-mt-18 sm:scroll-mt-0 bg-black/70"
+      className="relative w-full min-w-50 py-10 px-4 scroll-mt-18 sm:scroll-mt-0 bg-white"
     >
       {/* 1. Contenedor "Marco": overflow-hidden corta lo que se sale */}
 
@@ -88,7 +88,7 @@ function Reviews({}: Props) {
                   href="https://www.amazon.com/product-reviews/B0FQCS5226"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full h-full flex flex-col gap-4 items-center justify-center p-8 rounded-xl text-center bg-white/20 hover:bg-white/30  hover:scale-105 transition-all duration-400"
+                  className="w-full h-full flex flex-col gap-4 items-center justify-center p-8 rounded-xl text-center bg-black/20 hover:bg-black/40  hover:scale-105 transition-all duration-400"
                 >
                   <div className="flex text-yellow-400">
                     {[...Array(review.rating)].map((_, i) => (
@@ -96,15 +96,15 @@ function Reviews({}: Props) {
                     ))}
                   </div>
 
-                  <h3 className="font-poppins text-xl text-white font-semibold italic truncate w-full">
+                  <h3 className="font-poppins text-xl text-black/60 font-semibold italic truncate w-full">
                     "{review.reviewTitle}"
                   </h3>
 
-                  <p className="text-gray-200">
+                  <p className="text-gray-700">
                     "{review.reviewText.substring(0, 120)}..."
                   </p>
 
-                  <span className="font-semibold text-pink-300">
+                  <span className="font-semibold text-pink-400">
                     - {review.profileName || "Cliente Satisfecha"}
                   </span>
                 </a>
@@ -117,7 +117,7 @@ function Reviews({}: Props) {
             <div
               key={index}
               className={`h-1.5 w-1.5 rounded-full mx-1 ${
-                index === currentIndex ? "bg-blue-700" : " bg-white/20"
+                index === currentIndex ? "bg-blue-700" : " bg-black/40"
               }`}
             ></div>
           ))}
