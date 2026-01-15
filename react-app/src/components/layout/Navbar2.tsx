@@ -155,7 +155,7 @@ function Navbar2({}: Props) {
           <h3>Collagen</h3>
           <h3>Real Deep Mask</h3>
         </div>
-        <div className="w-full flex justify-center pt-2">
+        <div className="w-full flex justify-center pt-0 md:pt-2">
           <a
             href="https://www.amazon.com/dp/B0FQCS5226"
             target="_blank"
