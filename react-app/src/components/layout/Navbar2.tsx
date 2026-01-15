@@ -19,9 +19,9 @@ function Navbar2({}: Props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-[#c28eaf] h-[80vh] min-w-50 relative ">
+    <header className="bg-[#c28eaf] min-h-[80vh] min-w-50 relative flex flex-col">
       <nav
-        className="hidden lg:flex justify-between items-center px-13 h-36 relative z-10"
+        className="hidden md:flex justify-between items-center px-13 h-36 relative z-10"
         aria-label="Global"
       >
         <div>
@@ -83,7 +83,37 @@ function Navbar2({}: Props) {
         </div>
       </nav>
 
-      <nav className="lg:hidden fixed top-0 w-full z-50 flex flex-col bg-black">
+      <div className="  flex-1 flex flex-col gap-2 items-center justify-center mt-18 py-6 md:mt-0 md:pt-0">
+        <div className="relative flex items-center justify-center w-full">
+          <img
+            className=" max-lg:hidden aspect-square w-37.5 h-37.5 mr-2 shrink-0"
+            src={trace2}
+            alt="trace 2"
+          />
+          <img
+            className="aspect-auto w-full max-w-xl h-auto px-4 lg:px-0"
+            src={trace1}
+            alt="trace 1"
+          />
+        </div>
+        <div className="  text-center">
+          <h3>Collagen</h3>
+          <h3>Real Deep Mask</h3>
+        </div>
+        <div className="w-full flex justify-center pt-0 lg:pt-2">
+          <a
+            href="https://www.amazon.com/dp/B0FQCS5226"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Product in Amazon"
+            className="  bg-black text-white relative px-6 py-4 rounded-lg text-lg font-semibold   hover:bg-black/80 transition-colors shadow-[0px_2px_2px_rgba(0,0,0,0.5)] "
+          >
+            Shop Now
+          </a>
+        </div>
+      </div>
+
+      <nav className="md:hidden fixed top-0 w-full z-50 flex flex-col bg-black">
         <div className="flex justify-between items-center">
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -137,36 +167,6 @@ function Navbar2({}: Props) {
           )}
         </AnimatePresence>
       </nav>
-
-      <div className="absolute inset-0 m-auto flex flex-col gap-2 items-center justify-center mt-18 py-2 lg:mt-0 lg:py-0">
-        <div className="relative flex items-center justify-center w-full">
-          <img
-            className=" max-lg:hidden aspect-square w-37.5 h-37.5 mr-2 shrink-0"
-            src={trace2}
-            alt="trace 2"
-          />
-          <img
-            className="aspect-auto w-full max-w-xl h-auto px-4 lg:px-0"
-            src={trace1}
-            alt="trace 1"
-          />
-        </div>
-        <div className="  text-center">
-          <h3>Collagen</h3>
-          <h3>Real Deep Mask</h3>
-        </div>
-        <div className="w-full flex justify-center pt-0 lg:pt-2">
-          <a
-            href="https://www.amazon.com/dp/B0FQCS5226"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Product in Amazon"
-            className="  bg-black text-white relative px-6 py-4 rounded-lg text-lg font-semibold   hover:bg-black/80 transition-colors shadow-[0px_2px_2px_rgba(0,0,0,0.5)] "
-          >
-            Shop Now
-          </a>
-        </div>
-      </div>
     </header>
   );
 }
