@@ -9,10 +9,10 @@ function IntroductionSection({}: Props) {
     <section className=" min-w-50 w-full min-h-96 md:h-125 py-8 bg-black/70 flex flex-col justify-center items-center  text-white">
       <article className=" w-2/3 wrap-break-word ">
         <Reveal>
-          <h1 className=" text-center text-4xl">
+          <h1 className=" font-poppins font-semibold text-center text-3xl">
             Introducing the Deralyte Mask
           </h1>
-          <p className="text-center mt-15 text-lg">
+          <p className=" text-justify md:text-center mt-6 md:mt-15 md:text-lg">
             Revitalize your skincare routine with the Deralyte Bio-Collagen Deep
             Hydrating Face Mask, specially formulated to deliver intense
             overnight hydration and support a healthier, more radiant

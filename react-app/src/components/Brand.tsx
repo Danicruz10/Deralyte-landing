@@ -57,8 +57,8 @@ function Brand({}: Props) {
               />
             </Reveal>
             <Reveal>
-              <div className="flex flex-col  items-center gap-4 text-white  flex-1">
-                <h3 className="text-center font-bold text-xl min-h-12 ">
+              <div className="flex flex-col  items-center gap-4 text-white flex-1">
+                <h3 className="font-poppins text-center font-semibold text-xl min-h-fit ">
                   {item.title}
                 </h3>
                 <p className="text-center wrap-anywhere text-lg">

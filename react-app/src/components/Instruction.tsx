@@ -50,7 +50,7 @@ function Instruction({}: Props) {
               alt={item.tittle}
             />
             <div className="flex flex-col justify-center gap-4 text-xl">
-              <h2 className="text-xl md:text-5xl text-center font-bold text-white">
+              <h2 className="text-xl md:text-5xl text-center font-poppins font-semibold text-white">
                 {item.tittle}
               </h2>
               <p className="text-white whitespace-pre-line text-center ">

@@ -96,7 +96,7 @@ function Reviews({}: Props) {
                     ))}
                   </div>
 
-                  <h3 className="text-xl text-white font-bold italic truncate w-full">
+                  <h3 className="font-poppins text-xl text-white font-semibold italic truncate w-full">
                     "{review.reviewTitle}"
                   </h3>
 

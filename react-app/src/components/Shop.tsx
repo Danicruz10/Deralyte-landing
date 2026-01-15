@@ -15,10 +15,10 @@ function Shop({}: Props) {
           <Reveal>
             <header className=" flex justify-center ">
               <div className=" w-[clamp(17.5rem,70%,20rem)] text-white">
-                <h2 className="   max-[20rem]:text-xl text-2xl  leading-tight  max-[20rem]:text-center text-start">
+                <h2 className=" font-poppins font-semibold max-[20rem]:text-xl text-2xl  leading-tight  max-[20rem]:text-center text-start">
                   Renewed Formula...
                 </h2>
-                <h2 className="max-[20rem]:text-xl text-2xl leading-tight max-[20rem]:text-center text-end">
+                <h2 className="font-poppins font-semibold max-[20rem]:text-xl text-2xl leading-tight max-[20rem]:text-center text-end">
                   Enhanced Results
                 </h2>
               </div>
@@ -37,7 +37,7 @@ function Shop({}: Props) {
               <footer className=" w-full max-w-[320px] border-t border-white/20 pt-2">
                 <p className="text-white text-start text-lg">
                   Deralyte <br />
-                  <span className="font-bold">19 USD</span>
+                  <span className="font-semibold">19 USD</span>
                 </p>
               </footer>
             </article>
@@ -45,7 +45,9 @@ function Shop({}: Props) {
         </section>
         <section className="flex flex-col justify-center p-4 gap-4  text-white ">
           <Reveal>
-            <h3 className="text-start font-bold text-2xl">Deralyte Skincare</h3>
+            <h3 className="font-poppins text-start font-semibold text-2xl">
+              Deralyte Skincare
+            </h3>
           </Reveal>
           <Reveal>
             <p className="text-start wrap-anywhere">
