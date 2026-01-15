@@ -1,12 +1,15 @@
 //import React from "react";
 //import { Link } from "react-router-dom";
-import { useState } from "react";
+
 //import Hero from "../../assets/media/5035176395637721968.jpg";
 import trace2 from "../../assets/media/trace2.png";
 import trace1 from "../../assets/media/trace1.png";
 import { motion, AnimatePresence } from "framer-motion";
 
-type Props = {};
+type Props = {
+  onClick: () => void;
+  state: boolean;
+};
 
 const navigation = [
   { name: "Home", href: "#top" },
@@ -15,9 +18,7 @@ const navigation = [
   { name: "Announcement", href: "#reviews" },
 ];
 
-function Navbar2({}: Props) {
-  const [isOpen, setIsOpen] = useState(false);
-
+function Navbar2({ onClick, state }: Props) {
   return (
     <header className="bg-[#c28eaf] min-h-[80vh] min-w-50 relative flex flex-col">
       <nav
@@ -116,7 +117,7 @@ function Navbar2({}: Props) {
       <nav className="md:hidden fixed top-0 w-full z-50 flex flex-col bg-black">
         <div className="flex justify-between items-center">
           <button
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={onClick}
             className="  text-white relative p-6 z-6    "
           >
             <svg
@@ -145,14 +146,14 @@ function Navbar2({}: Props) {
         </div>
 
         <AnimatePresence>
-          {isOpen && (
+          {state && (
             <motion.div
               initial={{ opacity: 0, y: -20 }} // Cómo empieza (invisible y arriba)
               animate={{ opacity: 1, y: 0 }} // Cómo se ve activo
               exit={{ opacity: 0, y: -20 }} // Cómo se va (hacia arriba)
               transition={{ duration: 0.3, ease: "easeOut" }}
               className="flex flex-col w-full bg-black border-t border-gray-800"
-              onClick={() => setIsOpen(false)}
+              onClick={onClick}
             >
               {navigation.map((item) => (
                 <a
