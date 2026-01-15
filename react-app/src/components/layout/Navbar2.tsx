@@ -21,7 +21,7 @@ function Navbar2({}: Props) {
   return (
     <header className="bg-[#c28eaf] h-[80vh] min-w-50 relative ">
       <nav
-        className="hidden sm:flex justify-between items-center px-13 h-36 relative z-10"
+        className="hidden md:flex justify-between items-center px-13 h-36 relative z-10"
         aria-label="Global"
       >
         <div>
@@ -83,7 +83,7 @@ function Navbar2({}: Props) {
         </div>
       </nav>
 
-      <nav className="sm:hidden fixed top-0 w-full z-50 flex flex-col bg-black">
+      <nav className="md:hidden fixed top-0 w-full z-50 flex flex-col bg-black">
         <div className="flex justify-between items-center">
           <button
             onClick={() => setIsOpen(!isOpen)}
