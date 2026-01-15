@@ -141,12 +141,12 @@ function Navbar2({}: Props) {
       <div className="absolute inset-0 m-auto flex flex-col gap-2 items-center justify-center ">
         <div className="relative flex items-center justify-center w-full">
           <img
-            className=" max-md:hidden aspect-square w-37.5 h-37.5 mr-2 shrink-0"
+            className=" max-lg:hidden aspect-square w-37.5 h-37.5 mr-2 shrink-0"
             src={trace2}
             alt="trace 2"
           />
           <img
-            className="aspect-auto w-full max-w-xl h-auto px-4 md:px-0"
+            className="aspect-auto w-full max-w-xl h-auto px-4 lg:px-0"
             src={trace1}
             alt="trace 1"
           />
