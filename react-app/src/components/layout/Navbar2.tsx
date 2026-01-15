@@ -138,7 +138,7 @@ function Navbar2({}: Props) {
         </AnimatePresence>
       </nav>
 
-      <div className="absolute inset-0 m-auto flex flex-col gap-2 items-center justify-center pt-18">
+      <div className="absolute inset-0 m-auto flex flex-col gap-2 items-center justify-center lg:mt-18 lg:py-2 mt-0 py-0">
         <div className="relative flex items-center justify-center w-full">
           <img
             className=" max-lg:hidden aspect-square w-37.5 h-37.5 mr-2 shrink-0"
@@ -155,7 +155,7 @@ function Navbar2({}: Props) {
           <h3>Collagen</h3>
           <h3>Real Deep Mask</h3>
         </div>
-        <div className="w-full flex justify-center pt-0 md:pt-2">
+        <div className="w-full flex justify-center pt-0 lg:pt-2">
           <a
             href="https://www.amazon.com/dp/B0FQCS5226"
             target="_blank"
