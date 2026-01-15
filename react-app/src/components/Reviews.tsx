@@ -88,7 +88,7 @@ function Reviews({}: Props) {
                   href="https://www.amazon.com/product-reviews/B0FQCS5226"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full h-full flex flex-col gap-4 items-center justify-center p-8 rounded-xl text-center bg-white/20 hover:bg-white/30 transition-colors"
+                  className="w-full h-full flex flex-col gap-4 items-center justify-center p-8 rounded-xl text-center bg-white/20 hover:bg-white/30  hover:scale-105 transition-all duration-400"
                 >
                   <div className="flex text-yellow-400">
                     {[...Array(review.rating)].map((_, i) => (

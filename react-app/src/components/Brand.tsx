@@ -1,8 +1,8 @@
 //import React from 'react'
-import collagen from "../assets/media/Gemini_Generated_Image_xn8esnxn8esnxn8e.png";
-import ingredients from "../assets/media/unnamed.jpg";
-import hyaluronic from "../assets/media/unnamed (1).jpg";
-import Clear from "../assets/media/Gemini_Generated_Image_rvbjqqrvbjqqrvbj.png";
+import collagen from "../assets/media/Collagen.png";
+import ingredients from "../assets/media/1b.png";
+import hyaluronic from "../assets/media/Hyaluronic.png";
+import Clear from "../assets/media/Absorption.png";
 import Reveal from "./Reveal";
 
 type Props = {};
@@ -44,16 +44,14 @@ function Brand({}: Props) {
       className="w-full min-h-screen min-w-50 md:py-20 p-6 scroll-mt-18 sm:scroll-mt-0 bg-black/70 flex items-center "
     >
       <div className=" grid grid-cols-1 md:grid-cols-4 grow gap-4">
-        {brand.map((item, index) => (
+        {brand.map((item) => (
           <section
             key={item.id}
             className=" flex flex-col gap-4 h-full justify-start"
           >
-            <Reveal>
+            <Reveal className="w-full aspect-square rounded-full overflow-hidden p-4 flex items-center justify-center">
               <img
-                className={`w-full h-auto aspect-square ${
-                  index === 1 ? "object-cover" : "object-contain"
-                } rounded-full`}
+                className="w-full h-auto  object-contain "
                 src={item.image}
                 alt={item.title}
               />

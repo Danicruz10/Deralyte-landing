@@ -1,8 +1,8 @@
 //import React from 'react'
-import inst1 from "../assets/media/instruccion 1.jpg";
-import inst2 from "../assets/media/instruccion 2.jpg";
-import inst3 from "../assets/media/instruccion 3.jpg";
-import inst4 from "../assets/media/instuccion 4.jpg";
+import inst1 from "../assets/media/Cleanse&Prep.png";
+import inst2 from "../assets/media/ApplyBottomPiece.png";
+import inst3 from "../assets/media/ApplyTopPiece.png";
+import inst4 from "../assets/media/Relax&Absorb.png";
 import Reveal from "./Reveal";
 
 type Props = {};
@@ -43,17 +43,17 @@ function Instruction({}: Props) {
         <Reveal key={item.id}>
           <article className="grid grid-cols-1 md:min-h-[calc(100vh-3rem)] md:grid-cols-2 justify-items-center items-center grow gap-4">
             <img
-              className={`w-full md:w-[80%] h-auto aspect-square object-cover rounded-full order-last ${
+              className={`w-full md:w-[80%] h-auto aspect-square object-contain order-last ${
                 item.id % 2 === 0 ? "md:order-first" : "md:order-last"
               }`}
               src={item.image}
               alt={item.tittle}
             />
             <div className="flex flex-col justify-center gap-4 text-xl">
-              <h2 className="text-xl md:text-5xl text-center md:text-end font-bold text-white">
+              <h2 className="text-xl md:text-5xl text-center font-bold text-white">
                 {item.tittle}
               </h2>
-              <p className="text-white whitespace-pre-line text-center md:text-end">
+              <p className="text-white whitespace-pre-line text-center ">
                 {item.description}
               </p>
             </div>
