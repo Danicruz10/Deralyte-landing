@@ -3,7 +3,7 @@
 
 //import Hero from "../../assets/media/5035176395637721968.jpg";
 import trace2 from "../../assets/media/trace2.png";
-//import trace1 from "../../assets/media/trace1.png";
+//trace1 from "../../assets/media/trace1.png";
 import hero from "../../assets/media/Hero.webp";
 import heroMovil from "../../assets/media/HeroMovil.png";
 import { motion, AnimatePresence } from "framer-motion";
@@ -115,7 +115,10 @@ function Navbar2({ onClick, state }: Props) {
             alt="trace 1"
           />
         </div>
-
+        <div className="  text-center">
+          <h3>Collagen</h3>
+          <h3>Real Deep Mask</h3>
+        </div>
         <div className="w-full flex justify-center ">
           <a
             href="https://www.amazon.com/dp/B0FQCS5226"
