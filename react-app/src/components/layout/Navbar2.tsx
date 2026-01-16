@@ -3,7 +3,7 @@
 
 //import Hero from "../../assets/media/5035176395637721968.jpg";
 import trace2 from "../../assets/media/trace2.png";
-import trace1 from "../../assets/media/trace1.png";
+//import trace1 from "../../assets/media/trace1.png";
 import hero from "../../assets/media/Hero.webp";
 import heroMovil from "../../assets/media/HeroMovil.png";
 import { motion, AnimatePresence } from "framer-motion";
