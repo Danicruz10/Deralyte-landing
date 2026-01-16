@@ -33,12 +33,7 @@ function Navbar2({ onClick, state }: Props) {
         aria-label="Global"
       >
         <div>
-          <a
-            className="inline-block text-3xl text-black/60 hover:text-black/80 hover:scale-105 transition-transform duration-300"
-            href="#"
-          >
-            Deralyte
-          </a>
+          <h2 className=" text-3xl text-black/75">Deralyte</h2>
         </div>
         <div className="flex gap-4">
           {navigation.map((item) => (
