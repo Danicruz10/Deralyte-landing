@@ -5,6 +5,7 @@
 import trace2 from "../../assets/media/trace2.png";
 import trace1 from "../../assets/media/trace1.png";
 import hero from "../../assets/media/Hero.webp";
+import heroMovil from "../../assets/media/HeroMovil.png";
 import { motion, AnimatePresence } from "framer-motion";
 
 type Props = {
@@ -101,7 +102,7 @@ function Navbar2({ onClick, state }: Props) {
         </a>
       </div>
 
-      <div className=" md:hidden  flex-1 flex flex-col gap-2 items-center justify-center mt-18 py-6 ">
+      <div className=" md:hidden  flex-1 flex flex-col gap-2 items-center justify-center mt-18 pb-6 ">
         <div className="relative flex items-center justify-center w-full">
           <img
             className=" max-lg:hidden aspect-square w-37.5 h-37.5 mr-2 shrink-0"
@@ -110,14 +111,11 @@ function Navbar2({ onClick, state }: Props) {
           />
           <img
             className="aspect-auto w-full max-w-xl h-auto px-4 "
-            src={trace1}
+            src={heroMovil}
             alt="trace 1"
           />
         </div>
-        <div className="  text-center">
-          <h3>Collagen</h3>
-          <h3>Real Deep Mask</h3>
-        </div>
+
         <div className="w-full flex justify-center ">
           <a
             href="https://www.amazon.com/dp/B0FQCS5226"
