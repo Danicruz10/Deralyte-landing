@@ -38,7 +38,7 @@ const instruction = [
 
 function Instruction({}: Props) {
   return (
-    <section className="w-full min-w-50 flex flex-col p-6 gap-4 md:gap-0  bg-linear-to-b from-pink-200 via-white to-pink-200 ">
+    <section className="w-full min-w-50 flex flex-col p-6 gap-4 md:gap-0  bg-linear-to-b  from-white to-brand-pink ">
       {instruction.map((item) => (
         <Reveal key={item.id}>
           <article className="grid grid-cols-1 md:min-h-[calc(100vh-3rem)] md:grid-cols-2 justify-items-center items-center grow gap-4">
