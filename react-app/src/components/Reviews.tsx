@@ -88,7 +88,7 @@ function Reviews({}: Props) {
                   href="https://www.amazon.com/product-reviews/B0FQCS5226"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full h-full flex flex-col gap-4 items-center justify-center p-8 rounded-xl text-center bg-black/20 hover:bg-black/40  hover:scale-105 transition-all duration-400"
+                  className="w-full h-full flex flex-col gap-4 items-center justify-center p-8 rounded-xl text-center bg-brand-pink/60 hover:bg-brand-pink  hover:scale-105 transition-all duration-400"
                 >
                   <div className="flex text-yellow-400">
                     {[...Array(review.rating)].map((_, i) => (
@@ -121,6 +121,16 @@ function Reviews({}: Props) {
               }`}
             ></div>
           ))}
+        </div>
+        <div className="w-full flex justify-center py-2 font-semibold text-blue-500">
+          <a
+            className="  hover:text-blue-700 hover:scale-105 transition-all duration-300"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.amazon.com/product-reviews/B0FQCS5226"
+          >
+            {"Read more>"}
+          </a>
         </div>
 
         {/* Botones de control */}
