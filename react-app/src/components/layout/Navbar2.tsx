@@ -92,9 +92,9 @@ function Navbar2({ onClick, state }: Props) {
 
       <div className="max-md:hidden w-full flex justify-center mt-auto pt-12 pb-6">
         <a
-          href="https://www.amazon.com/dp/B0FQCS5226"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#shop"
+          //target="_blank"
+          //rel="noopener noreferrer"
           aria-label="Product in Amazon"
           className="  bg-black text-white relative px-6 py-4 rounded-lg text-lg font-semibold   hover:bg-black/80 transition-colors shadow-[0px_2px_2px_rgba(0,0,0,0.5)] "
         >
@@ -121,10 +121,10 @@ function Navbar2({ onClick, state }: Props) {
         </div>
         <div className="w-full flex justify-center ">
           <a
-            href="https://www.amazon.com/dp/B0FQCS5226"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Product in Amazon"
+            href="#shop"
+            //target="_blank"
+            //rel="noopener noreferrer"
+            //aria-label="Product in Amazon"
             className="  bg-black text-white relative px-6 py-4 rounded-lg text-lg font-semibold   hover:bg-black/80 transition-colors shadow-[0px_2px_2px_rgba(0,0,0,0.5)] "
           >
             Shop Now
