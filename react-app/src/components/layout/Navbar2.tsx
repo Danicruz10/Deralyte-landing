@@ -27,7 +27,7 @@ function Navbar2({ onClick, state }: Props) {
   return (
     <header
       style={headerStyle}
-      className="h-[80vh] min-w-50 relative flex flex-col bg-linear-to-b from-white to-brand-pink md:bg-(image:--fondo-hero) bg-cover bg-center bg-no-repeat"
+      className="min-h-fit md:min-h-[80vh] min-w-50 relative flex flex-col bg-linear-to-b from-white to-brand-pink md:bg-(image:--fondo-hero) bg-cover bg-center bg-no-repeat"
     >
       <nav
         className="hidden md:flex justify-between items-center px-13 h-36 relative z-10"
@@ -102,7 +102,7 @@ function Navbar2({ onClick, state }: Props) {
         </a>
       </div>
 
-      <div className=" md:hidden  flex-1 flex flex-col gap-2 items-center justify-center mt-18 pb-6 ">
+      <div className=" md:hidden  flex-1 flex flex-col gap-2 items-star justify-center mt-18 py-6 ">
         <div className="relative flex items-center justify-center w-full">
           <img
             className=" max-lg:hidden aspect-square w-37.5 h-37.5 mr-2 shrink-0"
