@@ -6,7 +6,7 @@ type Props = {};
 
 function IntroductionSection({}: Props) {
   return (
-    <section className=" min-w-50 w-full min-h-96 md:h-125 py-8 bg-white flex flex-col justify-center items-center  text-black/60">
+    <section className=" min-w-50 w-full min-h-96 md:h-125 py-8 bg-pastel-white flex flex-col justify-center items-center  text-black/60">
       <article className=" w-2/3 wrap-break-word ">
         <Reveal>
           <h1 className=" font-poppins font-semibold text-center text-3xl">
