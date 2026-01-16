@@ -27,7 +27,7 @@ function Navbar2({ onClick, state }: Props) {
   return (
     <header
       style={headerStyle}
-      className="min-h-[80vh] min-w-50 relative flex flex-col bg-linear-to-b from-white to-brand-pink md:bg-(image:--fondo-hero) bg-cover bg-center bg-no-repeat"
+      className="h-[80vh] min-w-50 relative flex flex-col bg-linear-to-b from-white to-brand-pink md:bg-(image:--fondo-hero) bg-cover bg-center bg-no-repeat"
     >
       <nav
         className="hidden md:flex justify-between items-center px-13 h-36 relative z-10"
