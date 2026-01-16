@@ -117,7 +117,7 @@ function Reviews({}: Props) {
             <div
               key={index}
               className={`h-1.5 w-1.5 rounded-full mx-1 ${
-                index === currentIndex ? "bg-blue-700" : " bg-black/40"
+                index === currentIndex ? "bg-blue-500" : " bg-black/40"
               }`}
             ></div>
           ))}
