@@ -50,8 +50,9 @@ function Navbar2({ onClick, state }: Props) {
         <div className="flex gap-6">
           <a
             className="w-9 h-9 flex justify-center items-center rounded-full hover:scale-105 transition-transform duration-300 bg-linear-to-tr from-yellow-500 via-pink-600  to-purple-500 "
-            href="#"
+            href="https://www.instagram.com/deralyte.skin/"
             target="_blank"
+            rel="noopener noreferrer"
             title="Ir a Instagram de Deralyte"
           >
             <svg
