@@ -60,9 +60,9 @@ function Navbar2({ onClick, state }: Props) {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="w-8 h-8 text-white"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -139,22 +139,57 @@ function Navbar2({ onClick, state }: Props) {
             onClick={onClick}
             className="  text-white relative p-6 z-6    "
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              className="w-6 h-6"
-              aria-hidden="true"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M4 6l16 0" />
-              <path d="M4 12l16 0" />
-              <path d="M4 18l16 0" />
-            </svg>
+            <AnimatePresence mode="wait">
+              {state ? (
+                <motion.div
+                  key="close"
+                  initial={{ rotateY: -90, opacity: 0 }}
+                  animate={{ rotateY: 0, opacity: 1 }}
+                  exit={{ rotateY: 90, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-6 h-6"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" />
+                  </svg>{" "}
+                </motion.div>
+              ) : (
+                <motion.div
+                  key="menu"
+                  initial={{ rotateY: 90, opacity: 0 }}
+                  animate={{ rotateY: 0, opacity: 1 }}
+                  exit={{ rotateY: -90, opacity: 0 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-6 h-6"
+                    aria-hidden="true"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M4 6l16 0" />
+                    <path d="M4 12l16 0" />
+                    <path d="M4 18l16 0" />
+                  </svg>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </button>
 
           <img

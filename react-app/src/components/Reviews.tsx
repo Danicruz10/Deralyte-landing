@@ -42,8 +42,31 @@ function Reviews({}: Props) {
       if (window.innerWidth < 768) {
         setVisibleCount(1); // Celular: 1 reseña
       } else if (window.innerWidth < 1024) {
+        setCurrentIndex((prevIndex) => {
+          if (
+            prevIndex === reviews.length - visibleCount &&
+            visibleCount === 1
+          ) {
+            return prevIndex - 1;
+          }
+          return prevIndex;
+        });
         setVisibleCount(2); // Tablet: 2 reseñas
       } else {
+        setCurrentIndex((prevIndex) => {
+          if (
+            prevIndex === reviews.length - visibleCount &&
+            visibleCount === 2
+          ) {
+            return prevIndex - 1;
+          } else if (
+            prevIndex === reviews.length - visibleCount &&
+            visibleCount === 1
+          ) {
+            return prevIndex - 2;
+          }
+          return prevIndex;
+        });
         setVisibleCount(3); // Monitor: 3 reseñas
       }
     };
@@ -53,7 +76,7 @@ function Reviews({}: Props) {
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  }, [visibleCount]);
 
   return (
     <div
