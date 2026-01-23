@@ -135,7 +135,7 @@ function Reviews({}: Props) {
             ))}
           </div>
         </div>
-        <div className="max-w-22.75 mx-auto flex md:hidden overflow-hidden border border-transparent ">
+        <div className="max-w-24 mx-auto flex md:hidden overflow-hidden border border-transparent ">
           <div
             className="flex transition-transform duration-300 ease-out justify-start"
             style={{
