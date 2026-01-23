@@ -13,7 +13,7 @@ function Reviews({}: Props) {
 
   // Usamos todas las reseñas del JSON (o las que quieras, ej: 10)
 
-  const reviews = reviewsData.slice(0, 5);
+  const reviews = reviewsData.slice(0, 10);
 
   const [visibleCount, setVisibleCount] = useState(3); // Cuántas queremos ver
 
@@ -135,15 +135,27 @@ function Reviews({}: Props) {
             ))}
           </div>
         </div>
-        <div className="max-w-3xs mx-auto flex justify-center md:hidden overflow-hidden">
-          {[...Array(reviews.length)].map((_, index: number) => (
-            <div
-              key={index}
-              className={`h-1.5 w-1.5 rounded-full mx-1 ${
-                index === currentIndex ? "bg-blue-500" : " bg-black/40"
-              }`}
-            ></div>
-          ))}
+        <div className="max-w-22.75 mx-auto flex md:hidden overflow-hidden border border-transparent ">
+          <div
+            className="flex transition-transform duration-300 ease-out justify-start"
+            style={{
+              transform:
+                currentIndex > 4
+                  ? `translateX(-${(currentIndex - 4) * 14 - 10}px)`
+                  : "translateX(0px)",
+              width: `${reviews.length * 14}px`,
+            }} //14px es el ancho del punto + margen
+          >
+            {" "}
+            {[...Array(reviews.length)].map((_, index: number) => (
+              <div
+                key={index}
+                className={`h-1.5 w-1.5 rounded-full mx-1 shrink-0 ${index < currentIndex - 4 ? "scale-[60%]" : ""} ${index > 4 && index > currentIndex ? "scale-[60%]" : ""} ${
+                  index === currentIndex ? "bg-blue-500" : " bg-black/40"
+                }`}
+              ></div>
+            ))}
+          </div>
         </div>
         <div className="w-full flex justify-center py-2 font-semibold text-blue-500">
           <a
