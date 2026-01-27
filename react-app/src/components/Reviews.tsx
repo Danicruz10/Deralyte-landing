@@ -81,7 +81,7 @@ function Reviews({}: Props) {
   return (
     <div
       id="reviews"
-      className="relative w-full min-w-50 py-10 px-4 scroll-mt-18 sm:scroll-mt-0 bg-pastel-white"
+      className="relative w-full min-w-50  px-4 scroll-mt-18 sm:scroll-mt-0 bg-pastel-white"
     >
       {/* 1. Contenedor "Marco": overflow-hidden corta lo que se sale */}
 
