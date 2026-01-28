@@ -157,7 +157,7 @@ function Reviews({}: Props) {
             ))}
           </div>
         </div>
-        <div className="w-full flex justify-center py-2 font-semibold text-blue-500">
+        <div className="w-full flex justify-center pt-2 font-semibold text-blue-500">
           <a
             className="  hover:text-blue-700 hover:scale-105 transition-all duration-300"
             target="_blank"
